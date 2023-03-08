@@ -1,4 +1,4 @@
-/*import processing.opengl.*;
+import processing.opengl.*;
 import java.util.Map;
 
 void setup() {
@@ -13,8 +13,9 @@ int[][] p1 = {{147, 84, 118},{110, 79, 115}};
 int[][] p2 = {{86, 243, 196}, {255, 200, 200}};
 int[][] p3 = {{108, 164, 172}, {108, 131, 133}};
 int[][] p4 = {{236, 224, 209}, {165, 61, 14}};
+int[][] p5 = {{255, 135, 136}, {140, 175, 85}};
 
-int paleta = (int)random(1, 5);
+int paleta = (int)random(1, 6);
 int indexColor1 = (int)random(0,2);
 int indexColor2 = indexColor1 == 1 ? 0 : 1;
    
@@ -24,6 +25,7 @@ void draw() {
   colors.put(2, p2); //paleta 2
   colors.put(3, p3); //paleta 3
   colors.put(4, p4); //paleta 4
+  colors.put(5, p5); //paleta 5
   background(colors.get(0)[0][0],colors.get(0)[0][1],colors.get(0)[0][2]);
 
   noFill();
@@ -119,4 +121,4 @@ void draw() {
   }
   save("mi Imagen.png");
   
-}*/ 
+}
